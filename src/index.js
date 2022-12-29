@@ -46,11 +46,11 @@ function createMarkup(name) {
   <h3 class="country__subject">Capital: ${capital}</h3>
   <p class="country__text"><span class="country__span">Population:</span> ${population}</p>
  
-   <ul class="country__text"><span class="country__span">Languages:</span> ${Object.values(
+   <ul class="country__text country__languages "><span class="country__span">Languages:</span> ${Object.values(
      languages
    )
-     .map(el => `<li>${el}</li>`)
-     .join('')}</ul>
+     .map(el => `<li>${el} </li>`)
+     .join(',  ')}</ul>
 
 </div>`
   );
